@@ -110,6 +110,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onLoadFinished(@NonNull Loader<String> loader, String s) {
+        Log.d(TAG, "Got results from the loader");
         if (s != null) {
             mLoadingErrorTV.setVisibility(View.INVISIBLE);
             mSearchResultsRV.setVisibility(View.VISIBLE);
